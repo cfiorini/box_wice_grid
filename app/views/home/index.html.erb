@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <div class='row'>
+    <div class='col-lg-12'>
+        <h1>FooBar</h1>
+
+        <%= grid(@grid) do |g|
+          g.action_column
+          g.column name: 'ID', attribute: 'id'
+          g.column name: 'Name', attribute: 'name'
+          g.column name: 'Birthday', attribute: 'birthday'
+          g.column name: 'Created at', attribute: 'created_at'
+        end -%>
+    </div>
+  </div>
+</div>
